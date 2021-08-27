@@ -1,0 +1,14 @@
+# Please keep each space separated section in sorted order.
+
+# Patterns that should be ignored.
+*.class
+
+# Files that should be ignored.
+/.DS_Store
+/.project
+/*.iml
+
+# Directories that should be ignored.
+/classes/
+/.idea/
+/.settings/
