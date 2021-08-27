@@ -1,0 +1,15 @@
+dn: cn=jmxUser,cn=Root DNs,cn=config
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: ds-cfg-root-dn-user
+givenName: JMX
+sn: User
+cn: JMX User
+userPassword: password
+ds-cfg-inherit-default-root-privileges: false
+ds-cfg-alternate-bind-dn: cn=jmxUser
+ds-privilege-name: jmx-read
+ds-privilege-name: jmx-notify

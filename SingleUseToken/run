@@ -1,0 +1,14 @@
+#!/bin/sh
+
+JAVA_OPTS="-Xms128m -Xmx256m -Dsun.lang.ClassLoader.allowArraySyntax=true"
+
+CLASSPATH="./classes/:./lib/unboundid-ldapsdk-ce.jar"
+export CLASSPATH
+
+FILE=`ls classes/`
+FILE="${FILE%.*}"
+
+COMMAND_LINE="java $JAVA_OPTS $FILE $@"
+
+[ -n "$DEBUG" ] && echo $COMMAND_LINE >&2
+$COMMAND_LINE
