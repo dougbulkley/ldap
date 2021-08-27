@@ -1,8 +1,10 @@
 # Simple JMX Test
 A simple java class using JMX
 
+*Note: The **LoadTestJMXServer** application uses [Apache Maven](https://maven.apache.org/)*
+
 ## Documentation
- * Install a DS server
+ * Install an LDAP server
  * Enable the jxm handler on the default port of 1689:
    bin/dsconfig set-connection-handler-prop --handler-name "JMX Connection Handler" --set enabled:true
  * Create a user with the necessary jmx user privileges:
