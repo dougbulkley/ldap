@@ -1,6 +1,8 @@
 # ldap
 Simple standalone code used for testing ldap functionality.
 
+*Note: One exception to the below is **LoadTestJMXServer**, which uses Maven and is described in its own README.md file.*
+
 Each directory is a standalone "application" that uses [ant](https://ant.apache.org/) to build and a **run** script to execute.
 
 Since these are "quick and dirty" test applications, most require a locally running LDAP server and modifications to the src to properly connect.
